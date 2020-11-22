@@ -139,12 +139,20 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="BusinessUser.cpp" />
     <ClCompile Include="Main.cpp" />
+    <ClCompile Include="Message.cpp" />
     <ClCompile Include="Post.cpp" />
+    <ClCompile Include="User.cpp" />
+    <ClCompile Include="USocial.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="BusinessUser.h" />
     <ClInclude Include="Media.h" />
+    <ClInclude Include="Message.h" />
     <ClInclude Include="Post.h" />
+    <ClInclude Include="User.h" />
+    <ClInclude Include="USocial.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
