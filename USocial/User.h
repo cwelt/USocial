@@ -13,8 +13,9 @@ class User
 {
 private:
 	friend class USocial;
+	static unsigned long nextUserId;
+
 protected:
-	// data members 
 	USocial *us;
 	unsigned long id;
 	std::string name;
@@ -26,14 +27,13 @@ protected:
 	User();
 	User(const User& user); // copy constructor 
 
-	// desstructor 
+	// destructor 
 	~User();
 
 	// util methods 
 	bool isFriend(User* user);
 
 public:
-	// Getters 
 	unsigned long getId();
 	std::string getName();
 

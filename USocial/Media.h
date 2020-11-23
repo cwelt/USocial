@@ -8,6 +8,7 @@ class Media
 {	
 public:
 	void virtual display() = 0;
+	std::string virtual getDescription() = 0 { return "media"; }
 };
 
 
@@ -16,6 +17,7 @@ class Photo : public Media
 {
 public:
 	void display() { std::cout << "image\n"; }
+	std::string getDescription() { return "image"; }
 };
 
 
@@ -24,6 +26,7 @@ class Audio : public Media
 {
 public:
 	void display() { std::cout << "audio\n"; }
+	std::string getDescription() { return "audio"; }
 };
 
 
@@ -32,6 +35,7 @@ class Video : public Media
 {
 public:
 	void display() { std::cout << "video\n"; }
+	std::string getDescription() { return "video"; }
 };
 
 #endif  // MEDIA_H_ 

@@ -2,7 +2,8 @@
 
 using namespace std;
 
-void User::sendMessage(User* user, Message* meesage)
+// business user could send message to whom he wants, friend or not
+void BusinessUser::sendMessage(User* user, Message* message)
 {
-	cout << "TODO sendMessage...";
+	user->receiveMessage(message);
 }

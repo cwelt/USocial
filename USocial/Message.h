@@ -12,6 +12,11 @@ private:
 public:
 	// methods
 	std::string getText();
+
+	//constructors
+	Message();
+	Message(std::string text);
+	Message(const Message& message); // copy constructor 
 };
 
 #endif // MESSAGE_H_
